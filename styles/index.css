@@ -64,9 +64,6 @@
 @import url(../block/footer/__list/footer__list.css);
 @import url(../block/footer/__social-icon/footer__social-icon.css);
 @import url(../block/footer/__column-link/footer__column-link.css);
-
-
-
 @keyframes pic-animation {
   from {
       transform: rotate(0deg);
@@ -75,4 +72,18 @@
   to {
       transform: rotate(360deg);
   }
+}
+
+.video-container > * {
+  width: 640px;
+  height: 360px;
+}
+.video-container {
+  /* нужно для позиционирования потомка */
+  position: relative;
+}
+.video-curtain {
+  /* эти свойства перемещают блок поверх видео */
+  position: absolute;
+  top: 0px;
 }
